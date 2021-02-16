@@ -1,0 +1,6 @@
+<launch>
+    <node name="pub_point" pkg="calc_length" type="pub_point" 
+          output="screen" launch-prefix="gnome-terminal --" />
+    <node name="calc_length" pkg="calc_length" type="calc_length" />
+    <node name="sub_float" pkg="calc_length" type="sub_float" output="screen" />
+</launch>
